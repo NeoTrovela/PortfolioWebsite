@@ -32,7 +32,7 @@ unsafe = true
 title = "Neo Trovela-Villamiel"
 description = "Welcome to my portfolio website"
 favicon = "/fav.png"
-useBootstrapCDN = false
+useBootstrapCDN = true
 animate = true
 
 [params.font]
