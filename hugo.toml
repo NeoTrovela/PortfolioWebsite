@@ -1,0 +1,213 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Neo Trovela-Villamiel Portfolio'
+theme = 'hugo-profile'
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+page = ["HTML", "RSS"]
+
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 3
+
+[markup.goldmark.renderer]
+unsafe = true
+
+# Blog menu item removed
+# [[Menus.main]]
+# identifier = "blog"
+# name = "Blog"
+# title = "Blog posts"
+# url = "/blogs"
+# weight = 1
+
+[params]
+title = "Neo Trovela-Villamiel"
+description = "Welcome to my portfolio website"
+favicon = "/fav.png"
+useBootstrapCDN = false
+animate = true
+
+[params.font]
+fontSize = "1rem"
+fontWeight = 400
+lineHeight = 1.5
+textAlign = "left"
+
+[params.navbar]
+align = "ms-auto"
+brandName = "Neo Trovela-Villamiel"
+disableSearch = false
+[params.navbar.stickyNavBar]
+enable = true
+showOnScrollUp = true
+[params.navbar.menus]
+disableAbout = false
+disableExperience = false
+disableEducation = false
+disableProjects = false
+disableAchievements = true
+disableContact = false
+
+# Hero Section
+[params.hero]
+enable = true
+intro = "Hi, my name is"
+title = "Neo Trovela-Villamiel"
+subtitle = "Northwestern University Computer Science"
+content = "A passionate developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+image = "/images/Facetune_28-09-2025-19-31-52.png"
+[params.hero.bottomImage]
+enable = true
+[params.hero.button]
+enable = true
+name = "Resume"
+url = "/Neo-Trovela-Villamiel-Resume.pdf"
+download = "Neo-Trovela-Villamiel-Resume.pdf"
+newPage = false
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/NeoTrovela"
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://linkedin.com/in/neo-trovela-villamiel"
+
+# About Section
+[params.about]
+enable = true
+title = "About Me"
+image = "/images/Facetune_28-09-2025-19-31-52.png"
+content = """
+I am a current senior studying at Northwestern University with passions for full-stack development, devops, and applied AI.
+My background of coursework and projects from Northwestern University as well as internship experience as a 
+software developer and an AI drug discovery intern gives me the technical skills to succeed in this technical field.
+I am always looking for opportunities to learn and further develop my skills to best be able to contribute to meaningful projects.
+"""
+[params.about.skills]
+enable = true
+title = "Here are a few technologies I've been working with recently:"
+items = ["JavaScript", "React", "Node.js", "Python", "FastAPI", "PyTorch", "AWS", "Docker", "Ruby on Rails", "Heroku"]
+
+# Experience Section
+[params.experience]
+enable = true
+
+[[params.experience.items]]
+company = "BioDawn Innovations"
+companyUrl = "https://biodawninnovations.com/"
+[[params.experience.items.jobs]]
+name = "AI Drug Discovery Intern"
+date = "August 2025 - Present"
+content = """
+Co-Develop a machine learning dashboard with a focus on detecting Alzheimer's disease
+- Technologies: FastAPI, React, Stripe, PyTorch
+- Skills: Full-Stack Development, ML Development, Authentication Implementation
+"""
+
+[[params.experience.items]]
+company = "JetSweat"
+companyUrl = "https://www.jetsweatfitness.com/"
+[[params.experience.items.jobs]]
+name = "Software Development Intern"
+date = "May 2025 - August 2025"
+content = """
+Software Developer tasked with frontend and backend improvements and additional features and refactors.
+- Redesign and relaunch page on website
+- Improved AWS deployment pipeline
+- Rebuilt calorie calculation functions
+"""
+
+# Education Section
+[params.education]
+enable = true
+index = false
+
+[[params.education.items]]
+title = "Bachelor of Science in Computer Science"
+date = "2022 - 2026"
+GPA = "3.61 out of 4.0"
+content = """
+- Relevant Coursework: Scalable Software Architectures, AI and International Security, Human Computer Interaction, Software Studio
+- Projects: PhotoApp, CatCanvas, ClubHouse
+- Extracurricular Activities: Biokind Analytics(co-founder), Institute of Electical and Electronic Engineers(IEEE), Engineers Without Borders, Delta Tau Delta Fraternity
+- Honors and awards: Dean's List(Winter 2024, Fall 2024, Winter 2025, Spring 2025)
+"""
+[params.education.items.school]
+name = "Northwestern University"
+url = "https://www.mccormick.northwestern.edu/computer-science/"
+
+[[params.education.items]]
+title = "High School Diploma"
+date = "2018 - 2022"
+GPA = "4.7 out of 4.0"
+[params.education.items.school]
+name = "Maine West High School"
+url = "https://west.maine207.org/"
+
+
+# Projects Section
+[params.projects]
+enable = true
+
+[[params.projects.items]]
+title = "PhotoApp"
+content = "Application that allows users to upload, analyze, and search photos stored in AWS S3, deployed using Elastic Beanstalk and EC2"
+image = "/images/projects/profile.png"
+badges = ["Node.js", "AWS", "Docker"]
+[[params.projects.items.links]]
+icon = "fab fa-github"
+url = "https://github.com/NeoTrovela/PhotoApp"
+
+[[params.projects.items]]
+title = "ClubHouse"
+content = "Web app that allows users to create, discover, and join clubs at their school"
+image = "/images/projects/converter.jpg"
+badges = ["Ruby on Rails", "Bootstrap", "Heroku"]
+[params.projects.items.featured]
+name = "Demo"
+link = "https://clubhouse-bb0e602288cc.herokuapp.com/clubs"
+[[params.projects.items.links]]
+icon = "fab fa-github"
+url = "https://github.com/m4ur1n0/clubhouse"
+
+# Contact Section
+[params.contact]
+enable = true
+content = "My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+btnName = "Mail me"
+btnLink = "mailto:your.email@example.com"
+
+# Footer
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = true
+disableFeaturedImage = false
+
+[params.footer.socialNetworks]
+github = "https://github.com/NeoTrovela"
+linkedin = "https://linkedin.com/in/neo-trovela-villamiel"
+
+[params.listPages]
+disableFeaturedImage = false
+
+[params.singlePages.readTime]
+enable = true
+content = "min read"
+[params.singlePages.scrollprogress]
+enable = true
+
+[params.terms]
+read = "Read"
+toc = "Table Of Contents"
+copyright = "All rights reserved"
+pageNotFound = "Page not found"
+emailText = "Check out this site"
+
+[params.datesFormat]
+article = "Jan 2, 2006"
+articleList = "Jan 2, 2006"
+articleRecent = "Jan 2, 2006"
