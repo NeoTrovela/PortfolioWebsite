@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://neotrovela.github.io/PortfolioWebsite/'
 languageCode = 'en-us'
 title = 'Neo Trovela-Villamiel Portfolio'
 theme = 'hugo-profile'
