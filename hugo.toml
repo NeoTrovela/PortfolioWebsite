@@ -2,12 +2,12 @@ baseURL = 'https://neotrovela.github.io/PortfolioWebsite/'
 languageCode = 'en-us'
 title = 'Neo Trovela-Villamiel Portfolio'
 theme = 'hugo-profile'
+enableRobotsTXT = true
+canonifyURLs = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 page = ["HTML", "RSS"]
-
-enableRobotsTXT = true
 
 [pagination]
 pagerSize = 3
@@ -32,7 +32,7 @@ unsafe = true
 title = "Neo Trovela-Villamiel"
 description = "Welcome to my portfolio website"
 favicon = "/fav.png"
-useBootstrapCDN = true
+useBootstrapCDN = false
 animate = true
 
 [params.font]
