@@ -87,7 +87,7 @@ image = "/images/Facetune_28-09-2025-19-31-52.png"
 content = """
 I am a current senior studying at Northwestern University with passions for full-stack development, devops, and applied AI.
 My background of coursework and projects from Northwestern University as well as internship experience as a 
-software developer and an AI drug discovery intern gives me the technical skills to succeed in this technical field.
+software developer and a machine learning intern gives me the technical skills to succeed in this technical field.
 I am always looking for opportunities to learn and further develop my skills to best be able to contribute to meaningful projects.
 """
 [params.about.skills]
@@ -103,7 +103,7 @@ enable = true
 company = "BioDawn Innovations"
 companyUrl = "https://biodawninnovations.com/"
 [[params.experience.items.jobs]]
-name = "AI Drug Discovery Intern"
+name = "Machine Learning Intern"
 date = "August 2025 - Present"
 content = """
 Co-Develop a machine learning dashboard with a focus on detecting Alzheimer's disease
@@ -132,12 +132,12 @@ index = false
 [[params.education.items]]
 title = "Bachelor of Science in Computer Science"
 date = "2022 - 2026"
-GPA = "3.61 out of 4.0"
+GPA = "3.7 out of 4.0"
 content = """
 - Relevant Coursework: Scalable Software Architectures, AI and International Security, Human Computer Interaction, Software Studio
-- Projects: PhotoApp, CatCanvas, ClubHouse
+- Projects: PhotoApp, Bill Splitter, ClubHouse
 - Extracurricular Activities: Biokind Analytics(co-founder), Institute of Electical and Electronic Engineers(IEEE), Engineers Without Borders, Delta Tau Delta Fraternity
-- Honors and awards: Dean's List(Winter 2024, Fall 2024, Winter 2025, Spring 2025)
+- Honors and awards: Dean's List(Winter 2024, Fall 2024, Winter 2025, Spring 2025, Fall 2025, Winter 2026)
 """
 [params.education.items.school]
 name = "Northwestern University"
@@ -176,6 +176,16 @@ link = "https://clubhouse-bb0e602288cc.herokuapp.com/clubs"
 [[params.projects.items.links]]
 icon = "fab fa-github"
 url = "https://github.com/m4ur1n0/clubhouse"
+
+[[params.projects.items]]
+title = "Bill Splitter"
+content = "Web app that allows users to upload and parse receipts for claimable items, and create a live session for users to join and split the bill"
+image = "/images/projects/converter.jpg"
+badges = ["Springboot", "WebSocket", "Typescript"]
+[params.projects.items.featured]
+[[params.projects.items.links]]
+icon = "fab fa-github"
+url = "https://github.com/CS-396-Full-Stack-Software-Eng/final-project-talan"
 
 # Contact Section
 [params.contact]
